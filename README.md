@@ -1,10 +1,10 @@
 ### Dockerfiles
 
-#### How To:
+#### Usage example:
 
 ``` shell
 git clone https://github.com/kintoandar/dockerfiles.git
-cd dockerfiles/$project
+cd dockerfiles/curl-loader
 docker build .
 ```
 
@@ -12,3 +12,5 @@ docker build .
 
 ##### curl-loader
 Installs curl-loader 0.56 on a clean CentOS 6.5 x86_64
+
+##### New projects comming soon
