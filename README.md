@@ -23,3 +23,6 @@ Installs curl-loader 0.56 on a clean CentOS 6.5 x86_64
 
 ##### test-kitchen
 CentOS 6.5 x86_64 image fully provisioned and ready for chef test-kitchen
+
+##### etsy-mixer
+Installs [etsy mixer platform](https://codeascraft.com/2015/09/15/assisted-serendipity/) for testing
