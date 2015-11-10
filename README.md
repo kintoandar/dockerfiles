@@ -26,3 +26,6 @@ CentOS 6.5 x86_64 image fully provisioned and ready for chef test-kitchen
 
 ##### etsy-mixer
 Installs [etsy mixer platform](https://codeascraft.com/2015/09/15/assisted-serendipity/) for testing
+
+##### hashicorp-vault
+Runs [Hashicorp Vault](https://vaultproject.io/) using busybox
