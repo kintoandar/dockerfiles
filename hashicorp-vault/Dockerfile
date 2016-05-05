@@ -1,7 +1,7 @@
 FROM        busybox
 MAINTAINER  Joel Bastos <kintoandar@gmail.com>
 
-ENV VERSION "0.3.1"
+ENV VERSION "0.5.2"
 
 COPY vault_conf.hcl /etc/
 ADD https://releases.hashicorp.com/vault/${VERSION}/vault_${VERSION}_linux_amd64.zip /tmp/vault_${VERSION}_linux_amd64.zip
