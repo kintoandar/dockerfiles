@@ -1,7 +1,7 @@
-Dockerfiles
-===========
+Documentation
+=============
 
-#### Ready to use containers
+### Ready to use containers
 You can find fully baked containers, using the [dockerfiles](https://github.com/kintoandar/dockerfiles) provided in this repository, on the public [docker registry](https://hub.docker.com/u/kintoandar/)
 
 #### Projects
@@ -27,5 +27,6 @@ cd dockerfiles/curl-loader
 docker build .
 ```
 
-#### Useful bash alias
-You can find some useful bash alias for interacting with the docker server on my [dotfiles repo](https://github.com/kintoandar/dotfiles/blob/master/.bashrc.d/docker)
+
+### Useful bash aliases
+You can find some useful bash aliases for interacting with the docker server on my [dotfiles repo](https://github.com/kintoandar/dotfiles/blob/master/.bashrc.d/docker)
