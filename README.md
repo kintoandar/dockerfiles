@@ -85,7 +85,7 @@ Launch the container bound to port 80 on `my.container.com` redirecting the conn
 docker run -d -e SRC_PORT="80" -e TO="example.com:2222" -p 80:80 kintoandar/fwd
 ```
 
-Connect on port 80 on my.container.com and end up in example.com port 2222
+Connect on port 80 on `my.container.com` and end up in `example.com` port 2222
 
 ```
 telnet my.container.com 80
