@@ -9,6 +9,9 @@ Table of Contents
       * [curl\-loader](#curl-loader)
       * [etsy\-mixer](#etsy-mixer)
       * [CentOS x86\_64](#centos-x86_64)
+      * [fwd](#fwd)
+        * [ENV variables](#env-variables)
+        * [Example](#example)
     * [Manual build example](#manual-build-example)
   * [Useful bash aliases](#useful-bash-aliases)
   * [Credits](#credits)
@@ -61,6 +64,40 @@ Installs [etsy mixer platform](https://codeascraft.com/2015/09/15/assisted-seren
 This container was built from scratch to have the smallest size footprint and it's currently being used by some of my dockerfiles
 
 You may have a look in my [kickstart files](https://github.com/kintoandar/rtfm/tree/master/kickstart)
+
+------
+
+### fwd
+[![Docker Pulls](https://img.shields.io/docker/pulls/kintoandar/fwd.svg?maxAge=3600)](https://hub.docker.com/r/kintoandar/fwd/)
+
+[fwd](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html) is a network port forwarder written in golang
+
+If you ever need to connect to a non-privileged port when you have a firewall allowing only 80/443, this container might help
+
+#### ENV variables
+ * `SRC_PORT`: Exposed port on the container
+ * `TO`: destination address (`host:port`)
+
+#### Example
+Launch the container bound to port 80 on my.container.com redirecting the connection to port 2222 on example.com
+
+```
+docker run -d -e SRC_PORT="80" -e TO="example.com:2222" -p 80:80 kintoandar/fwd
+```
+
+Connect on port 80 on my.container.com and end up in example.com port 2222
+
+```
+telnet my.container.com 80
+Trying 127.201.15.89...
+Connected to example.com.
+Escape character is '^]'.
+SSH-2.0-OpenSSH_5.3
+^C
+Connection closed by foreign host.
+```
+
+You can read more about `fwd` [here](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html)
 
 ------
 
