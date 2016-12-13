@@ -72,7 +72,7 @@ You may have a look in my [kickstart files](https://github.com/kintoandar/rtfm/t
 
 [fwd](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html) is a network port forwarder written in golang
 
-If you ever need to connect to a non-privileged port when you have a firewall allowing only 80/443, this container might help
+If you ever need to connect to a non-privileged port when you have a firewall in between allowing only 80/443, this container might help
 
 #### ENV variables
  * `SRC_PORT`: Exposed port on the container
