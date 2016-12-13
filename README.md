@@ -79,7 +79,7 @@ If you ever need to connect to a non-privileged port when you have a firewall in
  * `TO`: destination address (`host:port`)
 
 #### Example
-Launch the container bound to port 80 on my.container.com redirecting the connection to port 2222 on example.com
+Launch the container bound to port 80 on `my.container.com` redirecting the connection to port 2222 on `example.com`
 
 ```
 docker run -d -e SRC_PORT="80" -e TO="example.com:2222" -p 80:80 kintoandar/fwd
@@ -97,7 +97,7 @@ SSH-2.0-OpenSSH_5.3
 Connection closed by foreign host.
 ```
 
-You can read more about `fwd` [here](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html)
+If you want to know more about `fwd` check out [this article](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html)
 
 ------
 
