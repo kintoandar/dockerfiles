@@ -12,6 +12,7 @@ Table of Contents
       * [fwd](#fwd)
         * [ENV variables](#env-variables)
         * [Example](#example)
+      * [hashicorp\-consul](#hashicorp-consul)
     * [Manual build example](#manual-build-example)
   * [Useful bash aliases](#useful-bash-aliases)
   * [Credits](#credits)
@@ -98,6 +99,13 @@ Connection closed by foreign host.
 ```
 
 If you want to know more about `fwd` check out [this article](https://blog.kintoandar.com/2016/08/fwd-the-little-forwarder-that-could.html)
+
+------
+
+### hashicorp-consul
+[![Docker Pulls](https://img.shields.io/docker/pulls/kintoandar/hashicorp-consul.svg?maxAge=3600)](https://hub.docker.com/r/kintoandar/hashicorp-consul/)
+
+[Hashicorp Consul](https://www.consul.io/) on a tiny busybox
 
 ------
 
