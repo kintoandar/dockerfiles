@@ -14,6 +14,7 @@ Table of Contents
         * [Example](#example)
       * [hashicorp\-consul](#hashicorp-consul)
     * [Manual build example](#manual-build-example)
+  * [Docker Compose](#docker-compose)
   * [Useful bash aliases](#useful-bash-aliases)
   * [Credits](#credits)
 
@@ -118,6 +119,12 @@ cd dockerfiles/curl-loader
 docker build .
 ```
 
+# Docker Compose
+_[Compose](https://docs.docker.com/compose/) is a tool for defining and running multi-container Docker applications._
+
+[These are the available Compose files](https://github.com/kintoandar/dockerfiles/tree/master/docker-compose), using the containers available in this repo, for fun and profit:
+
+ * Vault with Consul backend
 
 # Useful bash aliases
 You can find some useful bash aliases for interacting with the docker server on my [dotfiles repo](https://github.com/kintoandar/dotfiles/blob/master/.bashrc.d/docker)
