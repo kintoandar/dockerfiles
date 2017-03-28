@@ -1,0 +1,19 @@
+vault:
+  hostname: vault
+  image: kintoandar/hashicorp-vault:latest
+  ports:
+    - 8200:8200
+  volumes:
+    - ./vault.hcl:/etc/vault.hcl
+  command: "server -config=/etc/vault.hcl"
+  links:
+    - "consul:consul"
+
+consul:
+  hostname: consul
+  image: kintoandar/hashicorp-consul:latest
+  ports:
+    - 80:8500
+  volumes:
+    - ./consul.json:/etc/consul.json
+  command: "agent -server -config-file=/etc/consul.json"
