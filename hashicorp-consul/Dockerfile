@@ -1,7 +1,7 @@
 FROM        busybox
 MAINTAINER  Joel Bastos <kintoandar@gmail.com>
 
-ENV VERSION "0.7.5"
+ENV VERSION "0.9.2"
 
 ADD https://releases.hashicorp.com/consul/${VERSION}/consul_${VERSION}_linux_amd64.zip /tmp/consul_${VERSION}_linux_amd64.zip
 RUN unzip -o /tmp/consul_${VERSION}_linux_amd64.zip -d /bin/ && rm /tmp/consul_${VERSION}_linux_amd64.zip
