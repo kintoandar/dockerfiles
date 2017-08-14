@@ -1,0 +1,16 @@
+{ 
+  "http_api_response_headers": {
+    "Access-Control-Allow-Origin": "*"
+  },
+  "client_addr": "0.0.0.0",
+  "datacenter": "dc1",
+  "acl_datacenter": "dc1",
+  "data_dir": "/root",
+  "server": true,
+  "log_level": "WARN",
+  "bootstrap": true,
+  "ui": true,
+    "dns_config": {
+      "allow_stale": false
+    }
+}
