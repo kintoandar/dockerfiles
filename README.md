@@ -1,22 +1,24 @@
 Table of Contents
 =================
 
-  * [Table of Contents](#table-of-contents)
-    * [Ready to use containers](#ready-to-use-containers)
-      * [Projects](#projects)
-        * [hashicorp\-vault](#hashicorp-vault)
-        * [test\-kitchen](#test-kitchen)
-        * [curl\-loader](#curl-loader)
-        * [etsy\-mixer](#etsy-mixer)
-        * [CentOS x86\_64](#centos-x86_64)
-        * [fwd](#fwd)
-          * [ENV variables](#env-variables)
-          * [Example](#example)
-        * [hashicorp\-consul](#hashicorp-consul)
-      * [Manual build example](#manual-build-example)
-    * [Docker Compose](#docker-compose)
-    * [Useful bash aliases](#useful-bash-aliases)
-    * [Credits](#credits)
+   * [Table of Contents](#table-of-contents)
+      * [Ready to use containers](#ready-to-use-containers)
+         * [Projects](#projects)
+            * [hashicorp-vault](#hashicorp-vault)
+            * [test-kitchen](#test-kitchen)
+            * [curl-loader](#curl-loader)
+            * [etsy-mixer](#etsy-mixer)
+            * [CentOS x86_64](#centos-x86_64)
+            * [fwd](#fwd)
+               * [ENV variables](#env-variables)
+               * [Example](#example)
+            * [hashicorp-consul](#hashicorp-consul)
+            * [toolkit](#toolkit)
+               * [Example](#example-1)
+         * [Manual build example](#manual-build-example)
+      * [Docker Compose](#docker-compose)
+      * [Useful bash aliases](#useful-bash-aliases)
+      * [Credits](#credits)
 
 ## Ready to use containers
 You can find fully baked containers, using the [dockerfiles](https://github.com/kintoandar/dockerfiles) provided in this repository, on the public [docker registry](https://hub.docker.com/u/kintoandar/)
@@ -104,9 +106,29 @@ If you want to know more about `fwd` check out [this article](https://blog.kinto
 ------
 
 #### hashicorp-consul
-[![Docker Pulls](https://img.shields.io/docker/pulls/kintoandar/hashicorp-consul.svg?maxAge=3600)](https://hub.docker.com/r/kintoandar/hashicorp-consul/)
+[![docker pulls](https://img.shields.io/docker/pulls/kintoandar/hashicorp-consul.svg?maxage=3600)](https://hub.docker.com/r/kintoandar/hashicorp-consul/)
 
-[Hashicorp Consul](https://www.consul.io/) on a tiny busybox
+[hashicorp consul](https://www.consul.io/) on a tiny busybox
+
+------
+
+#### toolkit
+[![docker pulls](https://img.shields.io/docker/pulls/kintoandar/toolkit.svg?maxage=3600)](https://hub.docker.com/r/kintoandar/toolkit/)
+
+Container toolkit for debugging running containers
+
+##### Example
+Just replace `CONTAINER_HASH` with the hash of the running container where you want to attach the toolkit
+
+```
+docker run -it \
+  --pid=container:CONTAINER_HASH \
+  --net=container:CONTAINER_HASH \
+  --cap-add sys_admin \
+  kintoandar/toolkit
+```
+
+[Docker run reference](https://docs.docker.com/engine/reference/run/#additional-groups) page has useful information regarding this
 
 ------
 
