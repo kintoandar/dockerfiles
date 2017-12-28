@@ -128,7 +128,7 @@ docker run -it \
   kintoandar/toolkit
 ```
 
-[Docker run reference](https://docs.docker.com/engine/reference/run/#additional-groups) page has useful information regarding this
+[Docker run reference](https://docs.docker.com/engine/reference/run/#runtime-privilege-and-linux-capabilities) page has useful information regarding this
 
 ------
 
