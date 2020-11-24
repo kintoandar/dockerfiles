@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3
 MAINTAINER Joel Bastos <kintoandar@gmail.com>
 
 RUN apk add --update \
