@@ -24,6 +24,8 @@ RUN apk add --update \
   util-linux \
   vim \
   wget \
+  busybox-extras \
+  socat \
   && \
   rm -rf /var/cache/apk/*
 
